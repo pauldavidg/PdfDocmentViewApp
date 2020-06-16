@@ -6,7 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <EditText
         android:id="@+id/editTextCustomerName"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -139,19 +148,6 @@
         android:layout_toRightOf="@id/item2Spinner" />
 
 
-    <Button
-        android:id="@+id/pdf"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Create Invoice"
-        android:clickable="true"
-        android:layout_below="@id/textView1"
-        android:layout_marginTop="250dp"
-        android:background="#50B1F1"
-        android:layout_alignStart="@id/textView1"
-        android:layout_alignEnd="@id/editTxtQty2"
-        android:layout_alignLeft="@id/textView1"
-        android:layout_alignRight="@id/editTxtQty2" />
 
     <TextView
         android:id="@+id/textView2"
@@ -297,5 +293,21 @@
         android:layout_alignParentRight="true"
         android:layout_toRightOf="@id/item5Spinner" />
 
+            <Button
+                android:id="@+id/pdf"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Create Invoice"
+                android:clickable="true"
+                android:layout_below="@id/textView1"
+                android:layout_marginTop="250dp"
+                android:background="#50B1F1"
+                android:layout_alignStart="@id/textView1"
+                android:layout_alignEnd="@id/editTxtQty2"
+                android:layout_alignLeft="@id/textView1"
+                android:layout_alignRight="@id/editTxtQty2" />
+
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>
